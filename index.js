@@ -7,7 +7,7 @@ function handleCheck(event) {
   if (event.shiftKey && this.checked) {
     checkboxes.forEach(checkbox => {
       if (checkbox === this || checkbox === lastChecked) {
-        inBetween === !inBetween;
+        inBetween = !inBetween;
       }
 
       if (inBetween) {
